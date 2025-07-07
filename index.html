@@ -3,6 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilê Asé Opo Afonjá - RJ</title>
+  <style>
+    :root {
+      --cor-primaria: #1c1c1c;
+      --cor-secundaria: #5e3b25;
+      --cor-destaque: #3c8d40;
+      --cor-fundo: #f5f2ec;
+      --cor-texto: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--cor-primaria);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--cor-destaque);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1578751330165-bd8b74f9e15c') no-repeat center/cover;
+      color: white;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      max-width: 800px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: var(--cor-secundaria);
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .valores {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .valor {
+      flex: 1 1 45%;
+      background-color: #fff;
+      border-left: 5px solid var(--cor-destaque);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--cor-destaque);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2c6c30;
+    }
+
+    .contato {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .contato input,
+    .contato textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: var(--cor-primaria);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .valor {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ilê Asé Opo Afonjá - RJ</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#tradicao">Tradição</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Ilê Asé Opo Afonjá - RJ<br />Onde os caminhos se abrem com axé e ancestralidade.</h1>
+  </section>
+
+  <section id="sobre">
+    <h2>Quem Somos</h2>
+    <p>O <strong>Ilê Asé Opo Afonjá - RJ</strong> é uma casa de Candomblé que preserva e compartilha a força do axé através da tradição iorubá. Fundada com base no respeito à ancestralidade, à natureza e aos Orixás, é um lugar de acolhimento, sabedoria e transformação.</p>
+    <p>Nosso axé é construído no cuidado com o sagrado, no ritmo do tambor, na palavra dos mais velhos e no compromisso com a verdade.</p>
+    <a class="btn" href="#contato">Quero conhecer o Ilê</a>
+  </section>
+
+  <section id="tradicao">
+    <h2>Nossa Tradição</h2>
+    <div class="valores">
+      <div class="valor">📿 Tradição iorubá viva e enraizada</div>
+      <div class="valor">🕯️ Ritual, folha e fundamento com respeito</div>
+      <div class="valor">💛 Acolhimento verdadeiro a quem busca</div>
+      <div class="valor">👣 Escuta dos mais velhos e caminho com paciência</div>
+      <div class="valor">🌿 Axé que nasce do tempo da natureza</div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contato">
+      <p>Fale com a gente pelo WhatsApp: <strong>(00) 00000-0000</strong></p>
+      <p>Ou envie uma mensagem:</p>
+      <input type="text" placeholder="Seu nome" />
+      <input type="email" placeholder="Seu e-mail" />
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <a href="#" class="btn">Enviar</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Que seu caminho seja guiado pela luz do seu Ori e pela força dos que vieram antes.</p>
+    <p>&copy; Ilê Asé Opo Afonjá - RJ • Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ile Asè    Opo Afonjá</title>
   <style>
     body {
